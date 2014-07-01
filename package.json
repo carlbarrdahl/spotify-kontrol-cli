@@ -1,0 +1,28 @@
+{
+  "name": "spotify-kontrol-cli",
+  "version": "0.0.1",
+  "description": "Control Spotify from your terminal",
+  "main": "./src/cli.js",
+  "bin": {
+    "kontrol": "./bin/kontrol.js"
+  },
+  "preferGlobal": true,
+  "keywords": [
+    "spotify",
+    "remote",
+    "cli"
+  ],
+  "author": "Carl Barrdahl <carlbarrdahl@gmail.com>",
+  "readmeFilename": "README.md",
+  "license": "MIT",
+  "bugs": "https://github.com/carlbarrdahl/kontrol-cli/issues",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/carlbarrdahl/kontrol-cli.git"
+  },
+  "dependencies": {
+    "flatiron": "^0.3.11",
+    "colors": "^0.6.2",
+    "ws": "^0.4.31"
+  }
+}

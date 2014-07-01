@@ -1,0 +1,30 @@
+var colors = require('colors');
+
+module.exports = [
+	'',
+	'KONTROL'.bold.white,
+	'Send commands to a remote Spotify client',
+	'github: https://github.com/carlbardahl/spotify-kontrol-cli',
+	'author: <carlbarrdahl@gmail.com>',
+	'',
+	'Usage:'.green.bold,
+	'',
+	'Play track'.green,
+	' kontrol play',
+	'',
+	'Pause track'.green,
+	' kontrol pause',
+	'',
+	'Play next track'.green,
+	' kontrol next',
+	'',
+	'Play previous track'.green,
+	' kontrol prev',
+	'',
+	'Set repeat'.green,
+	' kontrol repeat <boolean>',
+	'',
+	'Set shuffle'.green,
+	' kontrol shuffle <boolean>',
+
+];
