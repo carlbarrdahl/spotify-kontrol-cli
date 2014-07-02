@@ -1,7 +1,7 @@
 kontrol-cli
 ===========
 
-Control Spotify from your terminal
+Send commands to a remote Spotify client with your terminal
 
 ![Screenshot](https://github.com/carlbarrdahl/spotify-kontrol-cli/raw/master/screenshot.png)
 
