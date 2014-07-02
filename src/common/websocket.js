@@ -1,8 +1,9 @@
 module.exports = function(action, callback) {
 
+	var cli = require('../cli');
 	var WebSocket = require('ws');
-	var ws = new WebSocket('ws://localhost:8080');
-	var colors = require('colors');
+
+	var ws = new WebSocket(cli.config.get('server') || 'ws://localhost:8080');
 
 	ws.on('error', function(err) {
 		console.log('');

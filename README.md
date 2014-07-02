@@ -3,7 +3,7 @@ kontrol-cli
 
 Control Spotify from your terminal
 
-![Screenshot](https://raw.github.com/carlbarrdahl/spotify-kontrol-cli/master/screenshot.png)
+![Screenshot](https://github.com/carlbarrdahl/spotify-kontrol-cli/raw/master/screenshot.png)
 
 ## How to use
 Install module globally:
@@ -11,6 +11,17 @@ Install module globally:
 ```bash
 npm install -g kontrol-cli
 ```
+
+Set server url:
+
+```bash
+kontrol config set server "ws://localhost:8080"
+```
+
+Install Spotify app:
+https://github.com/carlbarrdahl/spotify-kontrol-app
+
+Run server and connect Spotify app
 
 ## Commands
 

@@ -10,11 +10,14 @@ var flatiron = require('flatiron');
 
 var app = module.exports = flatiron.app;
 
+app.config.file({ file: path.join(__dirname, '..', '.config.json') });
 
 app.use(flatiron.plugins.cli, {
 	usage: require('./common/usage.js'),
 	source: path.join(__dirname, './commands'),
 });
+
+app.use(require('flatiron-cli-config'));
 
 app.start = function(callback) {
 
