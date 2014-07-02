@@ -1,6 +1,6 @@
 {
   "name": "spotify-kontrol-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Control Spotify from your terminal",
   "main": "./src/cli.js",
   "bin": {
