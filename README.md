@@ -9,7 +9,7 @@ Control Spotify from your terminal
 Install module globally:
 
 ```bash
-npm install -g kontrol-cli
+npm install -g spotify-kontrol-cli
 ```
 
 Set server url:
