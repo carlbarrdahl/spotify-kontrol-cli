@@ -3,7 +3,7 @@ kontrol-cli
 
 Control Spotify from your terminal
 
-![Screenshot](https://raw.github.com/carlbarrdahl/spotify-kontrol-cli/master/screenshot.png)
+![Screenshot](https://github.com/carlbarrdahl/spotify-kontrol-cli/raw/master/screenshot.jpg)
 
 ## How to use
 Install module globally:
