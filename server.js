@@ -19,27 +19,16 @@ wss.on('connection', function(ws) {
 
 		try {
 
-			send(recipient, data);
+			recipient.send(JSON.stringify(data));
 
 		} catch (e) {
 
-			throw new Error(e);
+			ws.send(JSON.stringify({msg: 'error', payload: 'Unable to connect to Spotify. Make sure the app is running and connected!'}));
+			console.error(e);
 
 		}
 	});
 });
-
-function send(ws, data) {
-	try {
-
-		ws.send(JSON.stringify(data));
-
-	} catch (e) {
-
-		throw new Error(e);
-
-	}
-}
 
 function setSockets(ws) {
 	var origin = ws.upgradeReq.headers.origin.split(':')[0];

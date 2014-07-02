@@ -10,6 +10,11 @@ function Command(command, payload) {
 
 	}, function(data) {
 
+		if (data.msg === 'error') {
+
+			return print.error(data.payload);
+		}
+
 		print.status(data);
 
 	});

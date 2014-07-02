@@ -34,6 +34,11 @@ module.exports = {
 		this.progress(data.position / data.duration);
 	},
 
+	error: function(msg) {
+		console.log('');
+		console.log(whitespace + msg.red);
+	},
+
 	progress: function(ratio) {
 		var i;
 		var position = Math.floor(SCREEN_WIDTH * ratio) || 0;

@@ -18,7 +18,7 @@
   "bugs": "https://github.com/carlbarrdahl/kontrol-cli/issues",
   "repository": {
     "type": "git",
-    "url": "git://github.com/carlbarrdahl/kontrol-cli.git"
+    "url": "git://github.com/carlbarrdahl/spotify-kontrol-cli.git"
   },
   "dependencies": {
     "flatiron": "^0.3.11",
