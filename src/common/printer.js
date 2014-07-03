@@ -1,3 +1,9 @@
+/*
+
+OMG clean up this mess!!
+
+ */
+
 var colors = require('colors');
 
 var whitespace = '      ';
@@ -36,7 +42,7 @@ module.exports = {
 
 	error: function(msg) {
 		console.log('');
-		console.log(whitespace + msg.red);
+		console.log(whitespace + msg.bold.red);
 	},
 
 	progress: function(ratio) {

@@ -1,12 +1,14 @@
-var websocket = require('../common/websocket');
+var cli = require('../cli');
 var print = require('../common/printer');
+var websocket = require('../common/websocket');
 
 function Command(command, payload) {
 
 	websocket({
 
 		command: command,
-		payload: payload
+		payload: payload,
+		channel: cli.config.get('channel')
 
 	}, function(data) {
 

@@ -6,22 +6,10 @@ Send commands to a remote Spotify client with your terminal
 ![Screenshot](https://github.com/carlbarrdahl/spotify-kontrol-cli/raw/master/screenshot.png)
 
 ## How to use
-Install module globally:
-
-```bash
-npm install -g spotify-kontrol-cli
-```
-
-Set server url:
-
-```bash
-kontrol config set server "ws://localhost:8080"
-```
-
-Install Spotify app:
-https://github.com/carlbarrdahl/spotify-kontrol-app
-
-Run server and connect Spotify app
+1. Install module globally: ```npm install -g spotify-kontrol-cli```
+2. Install and run Spotify app: https://github.com/carlbarrdahl/spotify-kontrol-app
+3. Set channel displayed in the Spotify app: ```kontrol config set channel "asdf"```
+4. ```kontrol play```
 
 ## Commands
 

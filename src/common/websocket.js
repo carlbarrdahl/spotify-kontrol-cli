@@ -2,33 +2,37 @@ module.exports = function(action, callback) {
 
 	var cli = require('../cli');
 	var WebSocket = require('ws');
+	var print = require('../common/printer');
 
-	var ws = new WebSocket(cli.config.get('server') || 'ws://localhost:8080');
+	var ws = new WebSocket('ws://kontrol-app.herokuapp.com');
 
 	ws.on('error', function(err) {
-		console.log('');
-		console.log('Couldn\'t connect to the WebSocket server'.red);
+		print.error('Couldn\'t connect to the WebSocket server');
+		process.exit(1);
 	});
 
 	ws.on('open', function() {
-		ws.send(JSON.stringify(action));
 
-		if (callback) {
-
-			ws.on('message', function(data) {
-				data = JSON.parse(data);
-
-				callback(data);
-
-				ws.close();
+		if (!action.channel) {
+			callback({
+				msg: 'error',
+				payload: 'No channel set in config!'
 			});
 
-		} else {
+			return process.exit(1);
+		}
+
+		ws.send(JSON.stringify(action));
+
+		ws.on('message', function(data) {
+			data = JSON.parse(data);
+
+			callback(data);
 
 			ws.close();
-
-		}
+		});
 	});
 
 	return ws;
+
 };
